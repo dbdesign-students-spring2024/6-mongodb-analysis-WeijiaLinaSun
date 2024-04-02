@@ -321,9 +321,11 @@ def first_analysis():
 The results are as follows:
 
 ```json
+[
 {'_id': ObjectId('6607996f90769e963dfcc086'), 'host_id': 1267409, 'name': 'Rental unit in Vancouver · ★5.0 · 2 bedrooms · 3 beds · 1 bath', 'price': '$150.00', 'host_is_superhost': 'f', 'neighbourhood': 'Vancouver, British Columbia, Canada', 'host_name': 'Julia', 'beds': 3.0, 'review_scores_rating': 5.0}
 {'_id': ObjectId('6607996f90769e963dfcc097'), 'host_id': 1267409, 'name': 'Home in Vancouver · ★5.0 · 2 bedrooms · 4 beds · 1 bath', 'price': '$145.00', 'host_is_superhost': 'f', 'neighbourhood': 'Vancouver, British Columbia, Canada', 'host_name': 'Julia', 'beds': 4.0, 'review_scores_rating': 5.0}
 {'_id': ObjectId('6607996f90769e963dfcc0b3'), 'host_id': 3211112, 'name': 'Guest suite in Vancouver · ★5.0 · 2 bedrooms · 3 beds · 2 baths', 'price': '$125.00', 'host_is_superhost': 't', 'neighbourhood': 'Vancouver, British Columbia, Canada', 'host_name': 'Rasha', 'beds': 3.0, 'review_scores_rating': 5.0}
+]
 ```
 
 I re-executed the following query task with the Python code below: "only show the `name`, `beds`, `review_scores_rating`, and `price`"：
@@ -342,9 +344,11 @@ def second_analysis():
 The results are as follows:
 
 ```json
+[
 {'name': 'Rental unit in Vancouver · ★4.84 · Studio · 2 beds · 1 bath', 'price': '$150.00', 'beds': 2.0, 'review_scores_rating': 4.84}
 {'name': 'Rental unit in Vancouver · ★4.73 · 1 bedroom · 2 beds · 1 bath', 'price': '$120.00', 'beds': 2.0, 'review_scores_rating': 4.73}
 {'name': 'Rental unit in Vancouver · ★4.93 · 1 bedroom · 1 bed · 1 bath', 'price': '$150.00', 'beds': 1.0, 'review_scores_rating': 4.93}
+]
 ```
 
 I used Python to manipulate MongoDB has the following advantages over the command line, including automated execution of tasks, easy maintenance and reuse of code, ability to handle complex logic, robust data processing support, exception catching and error handling, cross-platform compatibility, rich community resources, and better user interaction experience. In addition, Python's asynchronous and concurrent features make database operations more efficient.
